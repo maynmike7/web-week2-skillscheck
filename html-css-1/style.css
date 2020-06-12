@@ -1,0 +1,99 @@
+body {
+    height: 200vh;
+    background-color: lightgrey;
+}
+
+nav {
+    height: 85px;
+    background-color: grey;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: sans-serif;
+    font-weight: 200;
+}
+
+#logo {
+    padding-left: 60px;
+    font-size: 50px;
+}
+
+#nav-bar {
+    width: 33vw;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 20px;
+}
+
+#main-header {
+    height: 400px;
+    width: 100vw;
+    background-color: black;
+    font-size: 85px;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: rgb(255, 235, 124);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-section {
+    height: calc(200vh-635px);
+    background-color: white;
+}
+
+#top {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.top-row {
+    background-color: rgb(130, 247, 212);
+    height: 300px;
+    width: 300px;
+    border-radius: 25px;
+}
+
+#middle {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.middle-row {
+    background-color: rgb(247, 213, 122);
+    height: 300px;
+    width: 600px;
+}
+
+#bottom {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 50px;
+}
+
+#words {
+    height: 200px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+}
+
+img {
+    height: 200px;
+}
+
+footer {
+    height: 150px;
+    background-color: slategray;
+}
