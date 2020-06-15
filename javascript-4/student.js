@@ -4,7 +4,7 @@
 //////////////////Step 1////////////////////
 // Create a new array called 'faveColors' and assign it a value of your three favorite colors as strings.
 
-let faveColors = [blue, green, yellow]
+let faveColors = ['blue', 'green', 'yellow']
 
 //////////////////Step 2////////////////////
 // Create an object called 'me' that has these keys: firstName, superHeroName, homeTown, superPowers, superPowerXP, and profileImage. 
@@ -26,8 +26,12 @@ let me = {
     superHeroName: 'Fat Mike',
     homeTown: 'Herriman',
     superPowers: ['rolling', 'eating', 'smashing things'],
-    superPowersXP: Math.floor(Math.random() * 100) + 1,
-    profileImage: URL(`https://randomuser.me/api/portraits/med/lego/${Math.floor(Math.random() * 10) + 1 }.jpg`)
+    superPowerXP: function() {
+        return Math.floor(Math.random() * 100) + 1
+    },
+    profileImage: function() {
+        return new URL('https://randomuser.me/api/portraits/med/lego/${Math.floor(Math.random() * 10) + 1 }.jpg')
+    }
 }
 
 //////////////////Step 3////////////////////
@@ -56,7 +60,7 @@ function setColor(arr) {
 
 function setPowers(arr) {
     for (let i = 0; i < arr.length; i++)
-    createLi(arr)
+    createLi(arr[i])
 }
 
 //////////////////Step 6////////////////////
@@ -64,7 +68,6 @@ function setPowers(arr) {
 
 function redactInfo(obj) {
     for (let i = 0; i < obj.length; i++)
-    obj.i = 'redacted'
-
+    obj[i] = 'redacted'
     redacted()
 }
